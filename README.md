@@ -126,14 +126,14 @@ WALLET_PRIVATE_KEY=b1823...
 
 Edit the truffle-config.js file by adding the following 2 lines:
 
-```bash
+```javascript
 require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 ```
 
 Then add the following lines for the 3 environments:
 
-```bash
+```javascript
 dev: {
   host: "127.0.0.1",     // Localhost (default: none)
   port: 7545,            // Standard Ethereum port (default: none)
@@ -156,7 +156,7 @@ mainnet: {
 
 For the compiler section add the following:
 
-```bash
+```javascript
 compilers: {
     solc: {
       version: "0.8.0",    // Fetch exact version from solc-bin (default: truffle's version)
@@ -207,7 +207,7 @@ touch 2_deploy.js
 
 Open the file to add the logic to deploy the MyToken file by adding the following:
 
-```bash
+```javascript
 var MyToken = artifacts.require("./MyToken.sol");
 
 module.exports = function(deployer){
