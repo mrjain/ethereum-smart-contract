@@ -237,4 +237,4 @@ You will first need to get some REAL Ether for Mainnet. This is it! **We are tal
 truffle migrate --reset --network mainnet
 ```
 
-**BOOM...You just created your own crypto-currency!**
+Copy the contract address that was created and go to https://etherscan.io/ and paste it. **BOOM...You just created your own crypto-currency!**
