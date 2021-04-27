@@ -1,6 +1,5 @@
 # Creating an ERC-20 token (aka crypto-currency)
 
----
 A straight forward implemention of the ERC-20 standard to write a smart contract for creating a new crypto-currency token. The token is called "The Rari Token" with a symbol of "ENZO"...I'll let you figure out which car company I'm referencing!
 
 ## What you will learn?
@@ -258,4 +257,5 @@ You will first need to get some REAL Ether for Mainnet. This is it! **We are tal
 truffle migrate --reset --network mainnet
 ```
 
-Copy the contract address that was created and go to <https://etherscan.io/> and paste it. **BOOM...You just created your own crypto-currency!**
+Copy the contract address that was created and go to <https://etherscan.io/> and paste it in. You will get a lot of information about the contract that was just created.
+**BOOM...You just created your own crypto-currency!**
