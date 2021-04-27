@@ -1,9 +1,7 @@
-# Creating an ERC-20 token (aka cryptocurrency)
+# Creating an ERC-20 token (aka crypto-currency)
 
 ---
-This is a very simple implemention of the ERC-20 standard to write a smart contract for creating a new cryptocurrency token.
-
-This token is called "The Rari Token" with a symbol of "ENZO"...I'll let you figure out which car company I'm referencing!
+A straight forward implemention of the ERC-20 standard to write a smart contract for creating a new crypto-currency token. The token is called "The Rari Token" with a symbol of "ENZO"...I'll let you figure out which car company I'm referencing!
 
 ## What you will learn?
 
@@ -12,7 +10,31 @@ This token is called "The Rari Token" with a symbol of "ENZO"...I'll let you fig
 - Using the Infura.io service to access the test and production Ethereum blockchain
 - Deploy the smart contract to Roptsen (test network) and Mainnet (production network)
 - Use MetaMask, an Ethereum wallet, to see the newly created cryptocurrency in your account
+## How to use this repo
 
+There are two ways to use this repo. The first method is to git clone this repo and install the packages. The second method is step by step of what needs to get done, this is longer but so much more beneficial if you are new to Ethereum, ERC-20, Solidity, smart contracts, etc...
+
+## Option 1: Clone this repo
+
+Via the cli (aka terminal), clone the GitHub to your local machine:
+
+```
+git clone https://github.com/mrjain/ethereum-smart-contract your-directory-name
+```
+
+From the above directory, install the node packages that are required and referenced in the package.json file:
+
+```
+npm install
+```
+
+Initiate the Truffle framework, but don't overwrite the files.
+
+```
+truffle init
+```
+
+Then once you download Ganache and complile the code you can then deploy it. The instructions for that are further down below. 
 ## Pre-Requirements
 
 First you will install Node.js and npm, this tutorial assumes you are using the MacOS:
@@ -28,7 +50,7 @@ Download MetaMask - a Chrome browser extension
 
 - MetaMask - <https://metamask.io/>
 
-## Building the project folder structure and installing the dependencies
+## Option 2: Building the project folder structure and installing the dependencies
 
 Via the cli (aka terminal), we're going to create a folder and navigate to it.
 
@@ -201,7 +223,7 @@ truffle migrate --reset
 ## Migration/deploy the smart contract to Ropsten
 
 You will first need to get some test Ether for Ropsten using a faucet,
-goto: https://faucet.dimensions.network/ and enter your Ethereum address to get some Ether. Once you have test Ether, deploy the smart contract to the Ropsten testing blockchain by type the following:
+goto: https://faucet.dimensions.network/ and enter your Ethereum address to get some Ether. Once you have test Ether, deploy the smart contract to the Ropsten testing blockchain by typing the following:
 
 ```
 truffle migrate --reset --network ropsten
@@ -209,8 +231,10 @@ truffle migrate --reset --network ropsten
 
 ## Migration/deploy the smart contract to Mainnet - the production Ethereum blockchain
 
-You will first need to get some **REAL Ether** for Mainnet. **This is it! Now we are talking real money here.** Once you have Ether, deploy the smart contract to Mainnet by type the following:
+You will first need to get some REAL Ether for Mainnet. This is it! **We are talking REAL MONEY here.** Once you have Ether, deploy the smart contract to Mainnet by typing the following:
 
 ```
 truffle migrate --reset --network mainnet
 ```
+
+**BOOM...You just created your own crypto-currency!**
